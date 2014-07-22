@@ -1,13 +1,58 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
 
+.cf:after {
+    clear: both;
+}
+
+body{
+	background: url("Images/Background.png")no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; 
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
 h1{
-	color:crimson;
+	color:white;
 }
 h2{
-	color:blue;
+	color:white;
 }
+h3{
+	color:white;
+}
+
 p{
-	font-family:"Verdana"
+	color:black;
+
+}
+#Overview{
+	font-weight: bolder;
+	color:red;
+	
+}
+
+#July_Twenty-two{
+	font-weight: bold;
+	color:red;
+}
+
+#July_Twenty-one{
+	font-weight:bold;
+	color:red;
+}
+
+p{
+	font-family:"Verdana";
+	margin-right: 100px;
+	margin-left: 100px;
 }
 h4{
-	color:darkgoldenrod;
+	color:gold;
 }
