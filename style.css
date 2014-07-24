@@ -60,3 +60,71 @@ h4{
 	color:gold;
 }
 
+#soccer-ball{
+	position: absolute;
+	width: 80px;
+	cursor: url(images/cleat.png), auto;
+}
+
+#soccer-ball:hover {
+	/*name of the animation referenced in the keyframes*/
+  -webkit-animation-name: spin;
+
+  /*Time in miiliseconds to execute one iteration of the animation*/
+  -webkit-animation-duration: 2000ms;
+
+  /*number of time the animation will play*/
+  -webkit-animation-iteration-count: 5;
+
+	/*A means to vary the rate of execution accross the duration of the
+	animation see Property values at http://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp
+	for different curve examples */
+  -webkit-animation-timing-function: linear;
+
+  -moz-animation-name: spin;
+  -moz-animation-duration: 2000ms;
+  -moz-animation-iteration-count: 5;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 2000ms;
+  -ms-animation-iteration-count: 5;
+  -ms-animation-timing-function: ease-out;
+
+  animation-name: spin;
+  animation-duration: 300ms;
+  animation-iteration-count: 5;
+  animation-timing-function: ease-out;
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from {
+    	-webkit-transform: rotate(0deg);
+    	left: 0;
+    	top: 0;
+    }
+    to {
+    	-webkit-transform: rotate(360deg);
+    	left: 1500px;
+    	top: 100px;
+    	width:120px;
+    
+    	}
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
