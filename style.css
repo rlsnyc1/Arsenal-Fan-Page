@@ -40,6 +40,11 @@ p{
 	color:darkred;
 }
 
+#July_Twenty-four{
+	font-weight: bold;
+	color:darkred;
+}
+
 #July_Twenty-two{
 	font-weight: bold;
 	color:darkred;
@@ -113,7 +118,7 @@ h4{
     	-webkit-transform: rotate(360deg);
     	left: 1500px;
     	top: 100px;
-    	width:120px;
+    	width:130px;
     
     	}
 }
